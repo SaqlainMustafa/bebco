@@ -1,0 +1,51 @@
+@import "_mixins";
+
+$ns: c-banner;
+
+.#{$ns} {
+    background-image: unset;
+    background-color: #dfe1e0;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: rem(40) rem(20);
+    border-radius: rem(20);
+
+    @include media-breakpoint-up(lg) {
+        padding: rem(66) rem(46);
+        background-image: url(../images/banner-main.png);
+        background-color: unset;
+    }
+
+    &__heading {
+        color: $primary;
+    }
+
+    &__content {
+        margin-top: rem(54);
+        p {
+            color: $dark-grey;
+            margin-bottom: rem(25);
+            line-height: rem(28);
+        }
+    }
+
+    &__mobile-img {
+        @include media-breakpoint-down(lg) {
+            overflow: hidden
+        }
+    }
+
+    &__get-started {
+        @include primary-btn;
+        margin-top: rem(33);
+        display: inline-block;
+
+        i {
+            font-weight: $font600;
+            font-size: rem(20);
+            margin-left: rem(10.45);
+        }
+    }
+}

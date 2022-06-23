@@ -1,0 +1,56 @@
+@mixin btn-white {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid $white;
+    padding: 11px 17px;
+    color: $white;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: $font600;
+
+    &:hover {
+        background-color: $white;
+        color: $teal;
+    }
+}
+
+@mixin primary-btn {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid $teal;
+    padding: 12px 18px;
+    color: $teal;
+    white-space: nowrap;
+    font-weight: $font600;
+    font-size: 18px;
+    line-height: 22px;
+
+    &:hover {
+        background-color: $teal;
+        color: $white;
+    }
+}
+
+@mixin booking-btn {
+    padding: 4px 12px;
+    background: $white;
+    font-size: 14px;
+    border-radius: 50px;
+    color: $primary;
+}
+
+@mixin find-more-btn {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid $white;
+    padding: 12px 18px;
+    color: $white;
+    white-space: nowrap;
+    font-weight: $font600;
+
+    &:hover {
+        background-color: $white;
+        color: $teal;
+    }
+}

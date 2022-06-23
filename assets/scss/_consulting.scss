@@ -1,0 +1,9 @@
+.innovation-projects {
+    margin-top: rem(60);
+    margin-bottom: rem(80);
+
+    @include media-breakpoint-up(lg) {
+        margin-top: rem(125);
+        margin-bottom: rem(225);
+    }
+}

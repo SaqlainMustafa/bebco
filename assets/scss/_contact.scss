@@ -1,0 +1,93 @@
+@import "_mixins";
+
+$ns: c-contact;
+
+.#{$ns} {
+    background-image: unset;
+    background-color: #dfe1e0;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: rem(40) rem(20);
+    border-radius: rem(20);
+
+    @include media-breakpoint-up(lg) {
+        padding: rem(66) rem(46);
+        background-image: url(../images/banner-main.png);
+        background-color: unset;
+    }
+
+    &__input-form{
+        margin-top: rem(20);
+        border: 2px solid $white;
+        box-shadow: -10px 10px 24px rgba(0, 0, 0, 0.15);
+        background: none;
+        border-radius: rem(12);
+        outline: none;
+        font-size: 23px;
+    }
+
+    &__heading {
+        color: $primary;
+        margin: rem(30) 0 rem(30) 0;
+        font-size: rem(23);
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    &__heading2 {
+        color: $primary;
+        margin-bottom: rem(25);
+    }
+
+    &__heading5 {
+        margin-top: rem(58px);
+    }
+
+    ::-webkit-input-placeholder{
+        color: $secondary;
+        opacity: 0.35;
+    }
+    
+    &__textarea-input {
+        font-size: rem(23);
+        height: rem(150);
+    }
+
+    &__content {
+        p {
+            color: $dark-grey;
+            margin-bottom: rem(20);
+            font-size: rem(20);
+            line-height: rem(28);
+            font-weight: 400;
+        }
+    }
+
+    &__heading3 {
+        color: $white;
+    }
+
+    &__content2 {
+        p {
+            color: $white;
+        }
+    }
+
+    &__google-map {
+        border-radius: rem(12);
+        margin-top: rem(113);
+    }
+    
+    &__find-us {
+        margin-top: rem(135);
+    }
+
+    &__recaptcha-text {
+        margin-top: rem(8);
+        font-size: rem(10);
+        color: $primary;
+        display: inline-block;
+    }
+}

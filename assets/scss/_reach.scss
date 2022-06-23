@@ -1,0 +1,83 @@
+@import "_mixins";
+
+$ns: c-reach;
+
+.#{$ns} {
+    background-image: unset;
+    background-color: #dfe1e0;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: rem(40) rem(20);
+    border-radius: rem(20);
+
+    @include media-breakpoint-up(xl) {
+        padding: rem(39) rem(46) rem(94) rem(46);
+        background-image: url(../images/reach-banner-main.png);
+        background-color: unset;
+    }
+
+    &__mobile-section {
+        margin-top: rem(65);
+
+        @include media-breakpoint-up(lg) {
+            margin-top: rem(151);
+        }
+    }
+
+    &__content {
+
+        @include media-breakpoint-down(lg) {
+            order: -1
+        }
+        p {
+            color: $dark-grey;
+            margin-bottom: rem(25);
+            line-height: rem(28)
+        }
+    }
+}
+
+.reach-containers {
+    // overflow: hidden;
+    .btn {
+        @include btn-white;
+
+        i {
+            margin-left: rem(6);
+        }
+    }
+
+    &.charge {
+        margin-top: rem(70);
+        margin-bottom: rem(80);
+
+        @include media-breakpoint-up(lg) {
+            margin-top: rem(130);
+            margin-bottom: rem(153);
+        }
+    }
+
+    &.locate {
+        margin-top: rem(70);
+        margin-bottom: rem(70);
+
+        @include media-breakpoint-up(lg) {
+            margin-top: rem(173);
+            margin-bottom: rem(177);
+        }
+    }
+
+    &.enigma {
+        padding: 0 !important;
+        background-image: url(../images/banner-main.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+
+        > .c-banner {
+            background: unset;
+        }
+    }
+}

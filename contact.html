@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beboc</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/scss/_mixins.scss" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./node_modules/wow.js/css/libs/animate.css">
+</head>
+<body>
+    <header class="container c-header">
+        <nav class="navbar navbar-expand-xl c-header__nav">
+            <div class="container-fluid">
+                <a class="navbar-brand c-header__logo" href="#">
+                    <img src="assets/images/website-logo.png" alt="website-logo" />
+                </a>
+                <button class="navbar-toggler c-header__navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="c-header__nav-border"></span>
+                    <span class="c-header__nav-border"></span>
+                    <span class="c-header__nav-border"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active c-header__nav-links " aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link c-header__nav-links" href="challenges.html" >Challenges</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link c-header__nav-links" href="solutions.html" >Solutions</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link c-header__nav-links" href="services.html" >Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link c-header__nav-links" href="work-with-us.html" >Work With Us</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link c-header__nav-links" href="blog.html" >Blog</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="contact.html" class="btn c-header__btn-contact" type="submit">Contact Us</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--end header code-->
+
+    <div class="container">
+        <div class="c-contact">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="form">
+                        <form>
+                            <input type="text" class="form-control form-control-lg c-contact__input-form" placeholder="First Name">
+                            <input type="text" class="form-control form-control-lg c-contact__input-form" placeholder="Surname">
+                            <input type="text" class="form-control form-control-lg c-contact__input-form" placeholder="Company">
+                            <input type="text" class="form-control form-control-lg c-contact__input-form" placeholder="Email">
+                            <input type="text" class="form-control form-control-lg c-contact__input-form" placeholder="Phone Number">
+                            <h5 class="c-contact__heading">How can we Help you?</h5>
+                            <textarea class="form-control c-contact__input-form c-contact__textarea-input" id="comment" name="text" placeholder="I’d like to learn more about.... (free text 300 characters)"></textarea>
+                            <span class="c-contact__recaptcha-text">Google reCAPTCHA in action</span>
+                            <button class="c-banner__get-started" type="button" id="js-click" style="float: right;">
+                                Send
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-sm-0 ps-lg-5" id="before-submit-form">
+                    <h1 class="c-contact__heading2">Contact Us</h1>
+                    <h5 class="c-contact__heading5">Purus sit amet luctus venenatis, lectus.</h5>
+                    <div class="c-contact__content">
+                        <p>If you’d like to explore how we could help you please fill out your details and a member of the team will be in touch.</p>
+                        <p>01204 232075</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 ps-sm-0 ps-lg-5 d-none" id="submit-form">
+                    <h1 class="c-contact__heading2">Thanks for getting in touch!</h1>
+                    <h5 class="c-contact__heading2">Our team will get in touch with you soon.</h5>
+                    <div class="c-contact__content">
+                        <p>If you still need to speak with us, you can call us on:</p>
+                        <p>01204 232075</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-4 p-lg-5 p-sm-0 c-contact__find-us">
+                <h1 class="c-contact__heading3">Find Us</h1>
+                <div class="c-contact__content2 mt-5">
+                    <p>Beboc, <br> Nortex Business Centre <br> 105 Chorley Old Road <br> Bl1 3AS</p>
+                    <p class="mt-5">What 3 Words : <br> ///mutual.tunes.gifted </p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="cmap">
+                    <iframe class="c-contact__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9552417.522136608!2d-13.4380292888432!3d54.23083150020214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e0!3m2!1sen!2s!4v1655179435337!5m2!1sen!2s" width="100%" height="433" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="c-footer">
+        <div class="c-footer__box">
+
+            <ul class="c-footer__links">
+                <h6 class="c-footer__headings">Home</h6>
+                <li><a href="#">What we do for you</a></li>
+                <li><a href="#">Challenges</a></li>
+                <li><a href="#">Who we are</a></li>
+            </ul>
+
+            <ul class="c-footer__links">
+                <h6 class="c-footer__headings">Challenges</h6>
+                <li><a href="#">Booking & Scheduling</a></li>
+                <li><a href="#">Stock & Logistics</a></li>
+                <li><a href="#">Field Force Management</a></li>
+                <li><a href="#">Vehicle Tracking</a></li>
+                <li><a href="#">Metering & Commissioning</a></li>
+                <li><a href="#">Electric Vehicle Chargepoints</a></li>
+            </ul>
+
+            <ul class="c-footer__links">
+                <h6 class="c-footer__headings">Solutions</h6>
+                <li><a href="#">REACH</a></li>
+                <li><a href="#">CHARGE</a></li>
+                <li><a href="#">S2</a></li>
+                <li><a href="#">LOCATE</a></li>
+                <li><a href="#">ENIGMA</a></li>
+            </ul>
+
+            <ul class="c-footer__links">
+                <h6 class="c-footer__headings">Services</h6>
+                <li><a href="#">Consulting</a></li>
+                <li><a href="#">Innovation Projects</a></li>
+                <li><a href="#">Bespoke Software Development</a></li>
+                <li><a href="#">Incubator Program</a></li>
+            </ul>
+
+            <ul class="c-footer__links">
+                <h6 class="c-footer__headings">Careers</h6>
+                <li><a href="#">Culture & Benefits</a></li>
+                <li><a href="#">Our Offices</a></li>
+                <li><a href="#">Vacancies</a></li>
+            </ul>
+
+            <ul class="c-footer__links">
+                <h6 class="c-footer__headings">Blog</h6>
+                <li><a href="#">Articles</a></li>
+            </ul>
+
+            <ul class="c-footer__links">
+                <h6 class="c-footer__headings">Contact Us</h6>
+                <li><a href="#">Get in Touch</a></li>
+            </ul>
+
+            <ul class="c-footer__links">
+                <h6 class="c-footer__headings">Privacy Policy</h6>
+            </ul>
+
+        </div>
+        <div class="c-footer__social-links">
+            <ul>
+                <li class="fa fa-facebook"></li>
+                <li class="fa fa-twitter"></li>
+                <li class="fa fa-instagram"></li>
+                <li class="fa fa-linkedin"></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+
+
+    <script src="./node_modules/wow.js/dist/wow.min.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

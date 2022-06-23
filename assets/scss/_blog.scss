@@ -1,0 +1,119 @@
+.main-blog-slider {
+    .blog-slider-box {
+
+
+        figure {
+            position: relative;
+
+            img {
+                max-width: 100%;
+            }
+
+            figcaption {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 2;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        }
+        
+
+        h1,
+        p {
+            color: $white;
+        }
+
+        h1 {
+            margin-bottom: rem(6);
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+    }
+
+    .slick-prev {
+        left: rem(16);
+
+        @include media-breakpoint-up(lg) {
+            left: rem(60);
+        }
+    }
+
+    .slick-next {
+        right: rem(10);
+
+        @include media-breakpoint-up(xl) {
+            right: rem(40);
+        }
+    }
+}
+
+.recent-articles {
+    background-image: unset;
+    background-color: #dfe1e0;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: rem(40) rem(20) rem(120) rem(20);
+    border-radius: rem(20);
+    margin-top: rem(60);
+    margin-bottom: rem(50);
+
+    @include media-breakpoint-up(xl) {
+        padding: rem(91) rem(173) rem(186) rem(178);
+        background-image: url(../images/recent-artical-banner.png);
+        background-color: unset;
+        margin-top: rem(120);
+        margin-bottom: rem(147);
+    }
+
+    .recent-article-slider {
+        margin-top: rem(75);
+
+        .slick-dots {
+            bottom: -3%;
+            top: unset;
+
+            @include media-breakpoint-up(xl) {
+                bottom: -13%;
+            }
+        }
+    }
+
+    .main-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        @include media-breakpoint-up(lg){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+.archieve-section {
+    .archieve-slider {
+        margin-top: rem(50);
+        padding-bottom: rem(40);
+
+        @include media-breakpoint-up(lg) {
+            margin-top: rem(110);
+        }
+    }
+
+    .slick-dots {
+        bottom: -3%;
+        top: unset;
+
+        @include media-breakpoint-up(xl) {
+            bottom: -13%;
+        }
+    }
+}
